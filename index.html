@@ -10,98 +10,115 @@ h1{margin:0;font-size:26px} .sub{color:var(--muted);margin-top:6px;font-size:15p
 main{max-width:920px;margin:0 auto;padding:20px}
 .card{background:#fff;border:1px solid #e6e2d8;border-radius:14px;padding:16px;margin:18px 0;
 box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.card.full{border:2px solid var(--green)}
 .head{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
 .head h2{margin:0;font-size:19px;flex:0 1 auto}
 .tr{color:var(--muted);font-size:13px;margin-left:auto}
 .b{font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;letter-spacing:.4px}
 .b.ok{background:#e3f6ec;color:var(--green)} .b.wait{background:#f0eee7;color:var(--muted)}
-video{width:100%;border-radius:10px;background:#000;aspect-ratio:16/9}
+.player{position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;background:#000 center/cover no-repeat;
+cursor:pointer;overflow:hidden}
+.player video{width:100%;height:100%;display:block;border-radius:10px;background:#000}
+.play{position:absolute;inset:0;margin:auto;width:74px;height:74px;border:none;border-radius:50%;
+background:rgba(15,157,88,.92);color:#fff;font-size:28px;cursor:pointer;display:flex;align-items:center;
+justify-content:center;padding-left:5px;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:transform .1s}
+.play:hover{transform:scale(1.08)}
 .pending{padding:48px;text-align:center;color:var(--muted);background:#faf9f5;border-radius:10px;border:1px dashed #d9d4c7}
 details{margin-top:10px} summary{cursor:pointer;color:var(--blue);font-size:14px}
 .script{color:#37414f;font-size:14px;background:#faf9f5;padding:12px;border-radius:8px;margin-top:8px}
 footer{text-align:center;color:var(--muted);padding:30px;font-size:13px}
 </style></head><body>
 <header><h1>Money Groot — 10 Formats To Bend</h1>
-<div class="sub">Full video ≈ 12 min (15 segments cut from the 12-min VO) · 15/15 rendered · tell me what to change on each</div></header>
+<div class="sub">Full video ≈ 12 min (15 segments cut from the 12-min VO) · 15/15 rendered · click any thumbnail to play · tell me what to change on each</div></header>
 <main>
     <section class="card full">
       <div class="head"><h2>▶ FULL VIDEO</h2><span class="b ok">12 MIN</span><span class="tr">the whole thing, assembled</span></div>
-      <video controls preload="metadata" src="videos/FULL.mp4"></video>
+      <div class="player big" data-src="videos/FULL.mp4" style="background-image:url('posters/FULL.jpg')"><button class="play" aria-label="Play">▶</button></div>
     </section>
     <section class="card" id="01-niche1-sports">
       <div class="head"><h2>Niche1 Sports</h2><span class="b ok">RENDERED</span><span class="tr">0:00–1:07 · 67s</span></div>
-      <video controls preload="metadata" src="videos/01-niche1-sports.mp4"></video>
+      <div class="player" data-src="videos/01-niche1-sports.mp4" style="background-image:url('posters/01-niche1-sports.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number one. The deep sports breakdown. The mechanic is dead simple. One sharp question as the title, one confident answer, clean animation over a calm voice. Intrcpt does this with football. Why are Premier League stadiums so small did 391,000 views, how to save a football club did 301,000. And the timing right now is loud, the World Cup is on, so football is getting a massive search spike. But here&#x27;s the honest part. That spike is exactly why this corner is jammed with channels, and football is general-interest, so the RPM sits low, somewhere around two to four dollars. So you take the breakdown engine and bend it into a sport that has far fewer essay channels. Basketball, like this channel, whose every position in basketball explained did 358,000 views. Or motorsport, like pepeexplainscars, whose seven fastest cars in motorsport explained did 228,000. Same skeleton, thinner competition. Just know the World Cup lift fades after summer, so build the channel to survive on evergreen questions, not just the tournament.</p></details>
     </section>
     <section class="card" id="02-niche2-stickfigure">
       <div class="head"><h2>Niche2 Stickfigure</h2><span class="b ok">RENDERED</span><span class="tr">1:07–2:11 · 64s</span></div>
-      <video controls preload="metadata" src="videos/02-niche2-stickfigure.mp4"></video>
+      <div class="player" data-src="videos/02-niche2-stickfigure.mp4" style="background-image:url('posters/02-niche2-stickfigure.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number two. The same breakdown engine, pulled completely out of sports. Watch how far it travels. Stickfigure explains breaks down your own life with drawings a child could make. How to actually quit any addiction has three point eight million views, how to fix your life did one point two million. Self-improvement runs around a four dollar RPM, so three point eight million views is roughly fifteen thousand dollars from just one video, and your only real cost is a freelance animator at eighty to a hundred dollars a video you can find on Fiverr. The barrier is so low that this niche floods quickly, and a generic self-help channel disappears in a month. So use the Niche bending concept to survive. Point the same explainer at science curiosities, like zenn, whose single video on the Calhoun Effect hit three point five million. Or at internet mysteries, like this channel, whose most dangerous computer viruses did 668,000. Pick a lane with fewer stick figures in it, and the format does the rest.</p></details>
     </section>
     <section class="card" id="03-niche3-psychology">
       <div class="head"><h2>Niche3 Psychology</h2><span class="b ok">RENDERED</span><span class="tr">2:11–3:10 · 59s</span></div>
-      <video controls preload="metadata" src="videos/03-niche3-psychology.mp4"></video>
+      <div class="player" data-src="videos/03-niche3-psychology.mp4" style="background-image:url('posters/03-niche3-psychology.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number three. The hyper-specific psychology profile, and this is one of the most durable plays on the list. Most psychology channels stay way too broad, which is why they get buried. Frank Educates did the opposite and went painfully narrow. The psychology of Black Gen X men who live alone did 281,000 views, this video did 89,000. He didn&#x27;t invent anything, he took what works for a channel like Psychology Simplified and narrowed it onto one very specific American group. Here&#x27;s why it pays. That audience is older and US-based, which pushes the RPM up toward the higher end of normal, call it five to eight dollars, well above general content. And the niche barely saturates, because there is an almost endless supply of micro-groups nobody has profiled yet. By the way, these are made with nothing more than Nano Banana and CapCut, so if you want a full breakdown of how to edit one, comment the word breakdown and I&#x27;ll build that video for you.</p></details>
     </section>
     <section class="card" id="04-niche4-everyX">
       <div class="head"><h2>Niche4 Everyx</h2><span class="b ok">RENDERED</span><span class="tr">3:10–4:05 · 55s</span></div>
-      <video controls preload="metadata" src="videos/04-niche4-everyX.mp4"></video>
+      <div class="player" data-src="videos/04-niche4-everyX.mp4" style="background-image:url('posters/04-niche4-everyX.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number four. The every-X-explained catalog, and here the bend is the language itself. The format promises completeness, every single one, so the viewer stays to the end. Bob Curioso runs it in Spanish, and his video did 212,000 views, because he took a format proven in English and pointed it at the nearly six hundred million people who speak Spanish. Be honest with yourself about the trade though. A Spanish or Latin American audience usually pays a lower RPM than a US one, so you are trading higher reach for lower dollars per view. The upside is durability, the catalog never runs dry. Point it at mythology, like this channel, making this amount of view on his video, or at dark history, like this channel, whose deadliest weapons from every era did half a million views. One skeleton, endless episodes, and almost no production cost beyond CapCut and a Gemini script.</p></details>
     </section>
     <section class="card" id="05-niche5-3am-horror">
       <div class="head"><h2>Niche5 3Am Horror</h2><span class="b ok">RENDERED</span><span class="tr">4:05–5:26 · 81s</span></div>
-      <video controls preload="metadata" src="videos/05-niche5-3am-horror.mp4"></video>
+      <div class="player" data-src="videos/05-niche5-3am-horror.mp4" style="background-image:url('posters/05-niche5-3am-horror.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number five, and this is the one from the very start. The three a.m. gaming-horror hook. Lab 3AM films drones catching creatures and bath bombs at three in the morning, and the numbers are absurd, six point nine million on one, four point four million on another. So why isn&#x27;t everyone copying it. Because this is where you need the truth. Gaming pays a low RPM, two to four dollars, the audience skews young which can drag it lower, and this style is volatile, it lives and dies on trends, so a channel can spike and crater fast. The smart move is to take that what-happened-to, cinematic-mystery hook and bend it somewhere that pays more and lasts longer. Lost history, like Lost Legacy, whose video did 222,000. Or Bible storytelling, like bible animations, whose the entire Bible drawn and explained did 635,000, and biblefix, whose what happens when you put God first did half a million views. One honest warning, before we continue. If you build on Bible content, write your own script and record your own narration, never re-upload someone else&#x27;s sermon or footage, or you risk a copyright strike on your own channel. And if you use an AI voice or AI images, add a simple made-with-AI line in the description to stay on the right side of YouTube&#x27;s rules.</p></details>
     </section>
     <section class="card" id="06-midcta">
       <div class="head"><h2>Midcta</h2><span class="b ok">RENDERED</span><span class="tr">5:26–5:47 · 21s</span></div>
-      <video controls preload="metadata" src="videos/06-midcta.mp4"></video>
+      <div class="player" data-src="videos/06-midcta.mp4" style="background-image:url('posters/06-midcta.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">If you&#x27;re getting value so far, hit subscribe, Money Groot breaks down what is actually working in faceless YouTube every week. And quick heads up on what&#x27;s coming, the format that did nearly ten million views on one upload is next, then the POV format that turns history into a movie, and at the end, the niche that pays the most per view on this entire list.</p></details>
     </section>
     <section class="card" id="07-niche6-weirdfacts">
       <div class="head"><h2>Niche6 Weirdfacts</h2><span class="b ok">RENDERED</span><span class="tr">5:47–6:46 · 59s</span></div>
-      <video controls preload="metadata" src="videos/07-niche6-weirdfacts.mp4"></video>
+      <div class="player" data-src="videos/07-niche6-weirdfacts.mp4" style="background-image:url('posters/07-niche6-weirdfacts.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number six. The weird-facts compilation, the laziest format here to actually produce. There is no story to build, you just stack short, surprising facts back to back. What Gives does it with animals, and animals with the most depressing lives did 839,000 views. Bend it into weird history and it goes nuclear, Sam O&#x27;Nella Academy did nearly ten million views on banned and controversial foods. Or into space, like Captain Cipher, whose weirdest things found on Mars did 581,000. The longevity is excellent, this kind of niche never runs out of facts, and strong thumbnails can carry one video for months. But here is the catch you have to respect. A pile of clips with a voiceover is exactly what YouTube flags as reused content, so your facts have to be genuinely re-written, your narration original, and your editing real, or you get demonetized. Make it yours and it prints. Phone it in and it dies.</p></details>
     </section>
     <section class="card" id="08-niche7-pov-rank">
       <div class="head"><h2>Niche7 Pov Rank</h2><span class="b ok">RENDERED</span><span class="tr">6:46–7:44 · 58s</span></div>
-      <video controls preload="metadata" src="videos/08-niche7-pov-rank.mp4"></video>
+      <div class="player" data-src="videos/08-niche7-pov-rank.mp4" style="background-image:url('posters/08-niche7-pov-rank.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number seven. The POV every-rank format, and honestly this might be the best all-rounder on the list. The mechanic is a ladder, you walk the viewer up a hierarchy one rank at a time, and the climb itself is what holds them. The Animal Person runs it on animals, your life as every ant colony rank did 653,000 views. Now look where it goes when you bend it. Grim history, like this channel making this amount of views from just one video. War, like unknown frequencies, what it was like to be every British army rank in World War Two, 306,000. Or extreme what-ifs, like Torec, I survived every Backroom level, three point three million. The reason this one is a keeper, history and war content in English sits at a high RPM, often four to ten dollars, the topics are evergreen so nothing goes stale, and the title basically writes itself every single time. Strong now, strong in two years.</p></details>
     </section>
     <section class="card" id="09-niche8-social">
       <div class="head"><h2>Niche8 Social</h2><span class="b ok">RENDERED</span><span class="tr">7:44–8:38 · 55s</span></div>
-      <video controls preload="metadata" src="videos/09-niche8-social.mp4"></video>
+      <div class="player" data-src="videos/09-niche8-social.mp4" style="background-image:url('posters/09-niche8-social.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number eight. The social-skills secret, a quietly reliable evergreen. ThatGuy teaches exactly one social skill per video, and his two videos did this amount of views. The format is a promise of a small superpower in under ten minutes, and self-improvement holds a solid mid-to-high RPM. But broad social skills are busy, so sharpen the audience instead of the topic, find the person who feels the pain tonight. Dating, like Beyond Attraction, whose every sign a girl has a crush on you did 151,000, or The Charisma Lab, whose five mistakes that kill attraction did 162,000. Or discipline and self-respect, like Mr No Plan A, whose one video on handling humiliation did 321,000. The demand here never dies, people will always want to be liked, more disciplined, more in control, which is exactly why this niche lasts.</p></details>
     </section>
     <section class="card" id="10-niche9-stepbystep">
       <div class="head"><h2>Niche9 Stepbystep</h2><span class="b ok">RENDERED</span><span class="tr">8:38–9:46 · 68s</span></div>
-      <video controls preload="metadata" src="videos/10-niche9-stepbystep.mp4"></video>
+      <div class="player" data-src="videos/10-niche9-stepbystep.mp4" style="background-image:url('posters/10-niche9-stepbystep.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number nine. The step-by-step explainer, sitting in the highest paying corner of the whole platform, so pay attention. Jack Explains Money teaches one money idea at a time, and how to turn saving into investing did 318,000 views. Finance is one of the best paying niches there is, often four to six dollars RPM and sometimes far higher, because the audience is older and advertisers fight over them, so 318,000 views at a five dollar RPM is around fifteen hundred dollars from one upload, on a topic that never goes out of season. Now keep that exact calm teaching format and bend it into the other evergreen people search forever, health and fitness. Bro Pump&#x27;s you&#x27;re doing push-ups wrong did three point eight million views, Captain Workout breaks down fat loss, and there are versions aimed at women, like Sculptress and Fit and Curious. The beauty of this bend is the topic supply, you can teach the body for every age and every gender, which is a near-infinite content well, and both finance and fitness stay in demand for years.</p></details>
     </section>
     <section class="card" id="11-niche10-sports-twist">
       <div class="head"><h2>Niche10 Sports Twist</h2><span class="b ok">RENDERED</span><span class="tr">9:46–10:52 · 65s</span></div>
-      <video controls preload="metadata" src="videos/11-niche10-sports-twist.mp4"></video>
+      <div class="player" data-src="videos/11-niche10-sports-twist.mp4" style="background-image:url('posters/11-niche10-sports-twist.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Number ten. The sports niche once again with a signature twist, and this is the timeliest play on the list, with a catch. This channel makes football arguments with one repeatable hook formula, Mbappe is what Zlatan warned us about did 579,000 views, and another in the same style did 346,000. The hook is the whole format, a famous name plus a claim you have to click to settle. Right now the timing is perfect, the World Cup has football peaking and the UFC is having a huge mainstream moment, so combat sports are hot too. Bend the same warned-us-about engine into another passionate fanbase. Simply Hoops did it in basketball and one video crossed half a million views, the identical skeleton on a new sport. It works for MMA narratives and for opinion animation too. Just go in clear-eyed, hot-take sports content rides the news cycle, so it spikes hard around big events and cools between them. Pick the sport you genuinely love so you can keep feeding it when the hype dies down, and it becomes your cash cow instead of a one-week spike.</p></details>
     </section>
     <section class="card" id="12-outro-thesis">
       <div class="head"><h2>Outro Thesis</h2><span class="b ok">RENDERED</span><span class="tr">10:52–11:08 · 16s</span></div>
-      <video controls preload="metadata" src="videos/12-outro-thesis.mp4"></video>
+      <div class="player" data-src="videos/12-outro-thesis.mp4" style="background-image:url('posters/12-outro-thesis.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script"></p></details>
     </section>
     <section class="card" id="13-outro-tools">
       <div class="head"><h2>Outro Tools</h2><span class="b ok">RENDERED</span><span class="tr">11:08–11:30 · 22s</span></div>
-      <video controls preload="metadata" src="videos/13-outro-tools.mp4"></video>
+      <div class="player" data-src="videos/13-outro-tools.mp4" style="background-image:url('posters/13-outro-tools.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">And you can build any of these with free tools, even from zero today. ChatGPT, Claude, or Gemini for the ideas and the script. Whisk, Grok, or Kling for visuals. ElevenLabs or Google AI Studio for the voice, and pick a custom voice, not the default preset, so you don&#x27;t sound like everyone else. CapCut to edit, and most of this runs on your phone.</p></details>
     </section>
     <section class="card" id="14-final-cta">
       <div class="head"><h2>Final Cta</h2><span class="b ok">RENDERED</span><span class="tr">11:30–11:53 · 23s</span></div>
-      <video controls preload="metadata" src="videos/14-final-cta.mp4"></video>
+      <div class="player" data-src="videos/14-final-cta.mp4" style="background-image:url('posters/14-final-cta.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">So here is what to do. Pick the one niche that fits you best, weigh the honest read I gave you, and make a single video bending it this week. If you want the full list, all ten formats with the exact channels and the open niches to bend each one into, it&#x27;s a free doc, link is in the description. And if this gives you a real idea, a quick like helps YouTube push it to more people who want to start.</p></details>
     </section>
     <section class="card" id="15-disclaimer">
       <div class="head"><h2>Disclaimer</h2><span class="b ok">RENDERED</span><span class="tr">11:53–12:10 · 17s</span></div>
-      <video controls preload="metadata" src="videos/15-disclaimer.mp4"></video>
+      <div class="player" data-src="videos/15-disclaimer.mp4" style="background-image:url('posters/15-disclaimer.jpg')"><button class="play" aria-label="Play">▶</button></div>
       <details><summary>script</summary><p class="script">Quick disclaimer. The earnings and results shown in this video are examples, not a promise. Most people who start a channel make little or nothing, and your results depend on your own effort, your consistency, and a bit of luck. Nothing here is financial advice. Treat this as education, not a guarantee.</p></details>
     </section></main>
 <footer>Autopilot Video Studio · whiteboard house style · review build</footer>
+<script>
+document.querySelectorAll('.player').forEach(function(p){
+  p.addEventListener('click', function once(){
+    var v=document.createElement('video');
+    v.src=p.dataset.src; v.controls=true; v.autoplay=true; v.playsInline=true; v.preload='auto';
+    p.innerHTML=''; p.style.cursor='default'; p.appendChild(v);
+    p.removeEventListener('click', once);
+  }, {once:true});
+});
+</script>
 </body></html>
